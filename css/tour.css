@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -36,9 +36,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 @media only screen and (min-width: 1170px) {
@@ -48,7 +48,7 @@ Main Components
 }
 .tour-section h1 {
   position: relative;
-  top: 45%;
+  top: 15%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -67,7 +67,6 @@ Main Components
   font-size: 2.3rem;
   color:#fff;
    letter-spacing:normal;
-   color:#92b2c9;
 }
 @media only screen and (min-width: 768px) {
   .tour-section h1 {
@@ -109,9 +108,9 @@ margin-bottom:0;
 .tour-section:first-of-type .full-container {
   visibility: visible;
   height: 100vh;
-  background-color: #1b2f3c;
-  background-image: url("../img/tour/intro.png");
-  background-size: cover;
+  background-color: #1cafec;
+  background-image: url("../img/tour/pablo-vi-logo.png");
+  background-size: auto;
    background-position: center center;
   background-repeat: no-repeat;
 }
@@ -140,8 +139,8 @@ margin-bottom:0;
   text-align:center;
 }
 .half-container h3{
-	font-family: 'proxima_novasemibold', Arial, Helvetica, sans-serif; 
-	
+	font-family: 'proxima_novasemibold', Arial, Helvetica, sans-serif;
+
 }
 .half-container:nth-of-type(1) {
   height: 60vh;
@@ -174,7 +173,7 @@ margin-bottom:0;
   background-size: cover;
 }
 .tour-section:nth-of-type(6) .half-container:first-of-type {
-  background-image: url("../img/tour/img-6.jpg");
+  background-image: url("../img/tour/art-creative-exhibition-20967.jpg");
   background-size: cover;
 }
 .tour-section:nth-of-type(7) .half-container:first-of-type {
