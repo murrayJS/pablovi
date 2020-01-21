@@ -35,7 +35,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_newsletter";
 $usersubject = "Thank You";
-$userheaders = "From: info@atena.com\n";
+$userheaders = "From: secretaria@pablovi.es\n";
 $usermessage = "Thank you for join to ATENA Newsletter!";
 mail($user,$usersubject,$usermessage,$userheaders);
 
