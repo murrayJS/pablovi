@@ -479,7 +479,8 @@ header#contacts {
 }
 
 .sub_header.bg_1 {
-    background-image: url(../img/header_bg_1.jpg);
+    /*background-image: url(../img/header_bg_1.jpg);*/
+    background-color: #283842;
 }
 
 .sub_header.bg_2 {
@@ -495,7 +496,7 @@ header#contacts {
 }
 
 .sub_header_contact_home {
-    background-image: url(../img/home.jpg);
+    background-image: url(../img/home-darknes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
