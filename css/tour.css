@@ -108,8 +108,8 @@ margin-bottom:0;
 .tour-section:first-of-type .full-container {
   visibility: visible;
   height: 100vh;
-  background-color: #1cafec;
-  background-image: url("../img/tour/pablo-vi-logo.png");
+  background-color: #1b2f3c;
+  background-image: url("../img/pablo-vi-logo-white.png");
   background-size: auto;
    background-position: center center;
   background-repeat: no-repeat;
@@ -157,27 +157,27 @@ margin-bottom:0;
   line-height: 1.6;
 }
 .tour-section:nth-of-type(2) .half-container:first-of-type {
-  background-image: url("../img/tour/img-1.jpg");
+  background-image: url("../img/photos/114-1000x1000.jpg");
   background-size: cover;
 }
 .tour-section:nth-of-type(3) .half-container:first-of-type {
-  background-image: url("../img/tour/img-2.jpg");
+  background-image: url("../img/photos/15994-a-female-student-reading-a-book-or.jpg");
   background-size: cover;
 }
 .tour-section:nth-of-type(4) .half-container:first-of-type {
-  background-image: url("../img/tour/img-3.jpg");
+  background-image: url("../img/photos/15078596384_72c25fb130_o.jpg");
   background-size: cover;
 }
 .tour-section:nth-of-type(5) .half-container:first-of-type {
-  background-image: url("../img/tour/img-4.jpg");
+  background-image: url("../img/photos/AdobeStock_80036885-1000x1000.jpeg");
   background-size: cover;
 }
 .tour-section:nth-of-type(6) .half-container:first-of-type {
-  background-image: url("../img/tour/art-creative-exhibition-20967.jpg");
+  background-image: url("../img/photos/blur-child-classroom-256468-1000x1000.jpg");
   background-size: cover;
 }
 .tour-section:nth-of-type(7) .half-container:first-of-type {
-  background-image: url("../img/tour/img-5.jpg");
+  background-image: url("../img/photos/architecture-baroque-building-1500598-1000x1000.jpg");
   background-size: cover;
 }
 @media only screen and (min-width: 1170px) {
