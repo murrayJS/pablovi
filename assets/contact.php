@@ -51,7 +51,7 @@ if(get_magic_quotes_gpc()) {
 
 
 //$address = "HERE your email address";
-$address = "your@email.com";
+$address = "murrayjsweb@gmail.com";
 
 
 // Below the subject of the email
@@ -80,8 +80,8 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Success message
 	echo "<div id='success_page' style='padding:20px'>";
-	echo "<strong >Email Sent.</strong>";
-	echo "Thank you <strong>$name_contact</strong>,<br> your message has been submitted. We will contact you shortly.";
+	echo "<strong >Mensaje enviado.</strong>";
+	echo "Gracias <strong>$name_contact</strong>,<br> tu mensaje ha sido enviado correctamente. Le contestaremos en la mayor brevedad.";
 	echo "</div>";
 
 } else {
