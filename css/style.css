@@ -762,6 +762,10 @@ iframe {
     width: 100%;
 }
 
+.iframe-map {
+    height: 500px;
+}
+
 video {
     width: 100%;
 }
