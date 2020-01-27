@@ -415,12 +415,12 @@ header {
 
 header.sticky,
 header.sticky#contacts {
-    background-color: #283842;
+    background-color: #366284;
     opacity: 1;
 }
 
 header#contacts {
-    background-color: #283842;
+    background-color: #366284;
     opacity: 0.9;
 }
 
@@ -479,16 +479,15 @@ header#contacts {
 }
 
 .sub_header.bg_1 {
-    /*background-image: url(../img/header_bg_1.jpg);*/
-    background-color: #283842;
+    background-image: url(../img/photos/art-creative-exhibition-20967-1000x1000.jpg);
 }
 
 .sub_header.bg_2 {
-    background-image: url(../img/header_bg_2.jpg);
+    background-image: url(../img/photos/16257-inside-of-a-cdc-library-or.jpg);
 }
 
 .sub_header.bg_3 {
-    background-image: url(../img/header_bg_3.jpg);
+    background-image: url(../img/photos/blur-child-classroom-256468-1000x1000.jpg);
 }
 
 .sub_header.bg_4 {
@@ -1005,7 +1004,7 @@ a.box_style_1:hover {
     font-size: 50px;
     position: absolute;
     left: 0;
-    color: #622960;
+    color: #4ec7f4;
     top: 0;
 }
 
@@ -2522,7 +2521,7 @@ ul.list_3 li:before {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background: #622960 url(../img/bg_banner.png) no-repeat right bottom;
+    background: #1cafec url(../img/bg_banner.png) no-repeat right bottom;
     padding: 30px 30px 60px 30px;
     color: #fff;
     text-align: center;

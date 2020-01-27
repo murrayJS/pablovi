@@ -73,192 +73,245 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
-    
-     <!-- SPECIFIC CSS -->
-     <link href="css/date_time_picker.css" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <link href="css/date_time_picker.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="preloader">
-	<div class="pulse"></div>
-</div><!-- Pulse Preloader -->
+    <div id="preloader">
+        <div class="pulse"></div>
+    </div><!-- Pulse Preloader -->
 
-<!-- Header================================================== -->
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <div id="logo">
-                    <a href="index.html"><img src="img/pablo-vi-logo-white.png" alt="Atena" data-retina="true"></a>
+    <!-- Header================================================== -->
+    <header>
+        <div class="container-fluid">
+            <div class="row flex-center">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/pablo-vi-logo-white.png" alt="Atena" data-retina="true"></a>
+                    </div>
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_mobile.png" width="125" height="40" alt="Atena" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Estudios <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="index.html">E.S.O</a></li>
+                                    <li><a href="index.html">E.S.O para adultos presencial y a distancia</a></li>
+                                    <li><a href="index.html">Bachillerato</a></li>
+                                    <li><a href="index.html">Ciclos formativos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="actividades.html">Actividades</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <!-- End main-menu -->
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+    <div class="sub_header bg_3">
+        <div id="intro_txt">
+            <h1><strong>Contacto</strong></h1>
+        </div>
+    </div>
+    <!--End sub_header -->
+
+
+    <div class="container_gray_bg">
+        <div id="position">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+        </div><!-- Position -->
+
+        <div class="container margin_60">
+            <div class="row margin-b-50">
+                <div class="col-md-8">
+                    <div class="box_style_1">
+                        <div class="indent_title_in">
+                            <i class="pe-7s-mail-open-file"></i>
+                            <h3>Contacto</h3>
+                        </div>
+                        <div class="wrapper_indent">
+                            <div id="message-contact"></div>
+                            <form method="post" action="assets/contact.php" id="contactform">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control styled" id="name_contact" name="name_contact" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Apellidos</label>
+                                            <input type="text" class="form-control styled" id="lastname_contact" name="lastname_contact" placeholder="Apellidos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" id="email_contact" name="email_contact" class="form-control styled" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label>Teléfono</label>
+                                            <input type="text" id="phone_contact" name="phone_contact" class="form-control styled" placeholder="Teléfono">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Estudios</label>
+                                            <select name="carlist" form="carform" class="form-control styled" placeholder="Seleccione opción">
+                                              <option disabled selected>-- Selecciona una opción --</option>
+                                              <option value="E.S.O">E.S.O</option>
+                                              <option value="Bachillerato">Bachillerato</option>
+                                              <option value="Técnico Superior en Administración y Finanzas">Técnico Superior en Administración y Finanzas</option>
+                                              <option value="Técnico Superior en Administración de Sistemas Informáticos en Red">Técnico Superior en Administración de Sistemas Informáticos en Red</option>
+                                              <option value="Técnico Superior en Educación Infantil<">Técnico Superior en Educación Infantil</option>
+                                            </select>
+                                        </div>      
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Mensaje</label>
+                                            <textarea rows="5" id="message_contact" name="message_contact" class="form-control styled" style="height:100px;" placeholder="Escriba su mensaje"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>¿Es un humano? 3 + 1 =</label>
+                                            <input type="text" id="verify_contact" class=" form-control styled" placeholder="Respuesta">
+                                        </div>
+                                        <input type="submit" value="Enviar" class="button add_bottom_30" id="submit-contact" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!-- End wrapper_indent -->
+                    </div><!-- End box style 1-->
+                </div><!-- End col-md-9 -->
+                <div class="col-md-4">
+
+                    <h4><strong>Admisión</strong></h4>
+                    <p>En la Secretaría del Colegio de Lunes a Viernes de 8.30 a 13.30 y de 15.00 a 18.00 horas.</p>
+
+                    <div class="box_side">
+                        <h5>Por teléfono</h5> <i class="icon-phone"></i>
+                        <p> 914 136 978 | 915 702 601</p>
+                    </div>
+
+                    <div class="box_side">
+                        <h5>Por email</h5> <i class="icon_pencil-edit"></i>
+                        <p>Solicita información mandándonos un email especificando el curso que te interesa y tus datos de contacto a las siguiente dirección: <a>secretaria@pablovi.es</a></p>
+                    </div>
+                    <hr class="styled">
+                    <div class="box_side">
+                        <h4>Plazo de Inscripción: Abierto a partir del 1 de Marzo.</h4>
+                    </div>
+                                        <div class="banner">
+                        <i class=" iconcustom-school"></i>
+                        <p>
+                            Realiza un tour por nuestro centro y conócenos.
+                        </p>
+                        <a href="tour.html" class="banner_bt">Empezar tour</a>
+                    </div>
+
                 </div>
             </div>
-            <nav class="col-md-9 col-sm-9 col-xs-9">
-                <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
-                <div class="main-menu">
-                    <div id="header_menu">
-                        <img src="img/logo_mobile.png" width="125" height="40" alt="Atena" data-retina="true">
-                    </div>
-                    <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
-                    <ul>
-                        <li class="submenu">
-                            <a href="javascript:void(0);" class="show-submenu">Estudios <i class="icon-down-open-mini"></i></a>
-                            <ul>
-                                <li><a href="index.html">E.S.O</a></li>
-                                <li><a href="index.html">E.S.O para adultos presencial y a distancia</a></li>
-                                <li><a href="index.html">Bachillerato</a></li>
-                                <li><a href="index.html">Ciclos formativos</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="actividades.html">Actividades</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>El Colegio Pablo VI está situado en Madrid, en la <em>calle Bravo Murillo, nº 297</em>. (Entrada posterior por calle Ceuta), muy próximo al <strong>Metro Tetuán, Línea 1 (Salida General Margallo)</strong>. También se puede acceder en <strong>autobús, líneas 66 y 124</strong>. <a href="https://www.emtmadrid.es/Home" target="_blank">(Más información en: Empresa de Transportes de Madrid)</a>.</p>
+                    <p>Está sitúado a pocos minutos de la <strong>Glorieta de Cuatro Caminos y de Plaza de Castilla</strong>, conexión con el intercambiador de autobuses interurbanos hacia los corredores correspondientes a la a A-1 y a la M-607 <a href="https://www.emtmadrid.es/Home" target="_blank">(Más información en: Sistema de Información de Transportes. Consorcio de Transportes de Madrid)</a>.</p>
+                    <p>Para los alumnos que vienen de fuera de Madrid disponen de conexión directa con la línea 1 de Metro a la estación de <strong>Renfe de Chamartín</strong>.</p>
                 </div>
-                <!-- End main-menu -->
-            </nav>
-        </div>
-    </div><!-- container -->
-</header><!-- End Header -->
+                <div class="col-md-8">
 
-<div class="sub_header bg_1" style="height: 170px">
-    <div id="intro_txt">
-        <h1><strong>Contacto</strong></h1>
-    </div>
-</div> <!--End sub_header -->
-
-
-        <div class="container_gray_bg">
-            <div id="position">
-                <div class="container">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li>Contacto</li>
-                    </ul>
-                </div>
-            </div><!-- Position -->
-            
-            <div class="container margin_60">
-                <div style="width: 100%">
-                    <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.626702783975!2d-3.700609584147914!3d40.461398479359964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42290663590107%3A0xb7bb4a02e3a1e072!2sCalle%20de%20Bravo%20Murillo%2C%20297%2C%2028020%20Madrid!5e0!3m2!1ses!2ses!4v1579807849921!5m2!1ses!2ses"
-                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+                    <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.626702783975!2d-3.700609584147914!3d40.461398479359964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42290663590107%3A0xb7bb4a02e3a1e072!2sCalle%20de%20Bravo%20Murillo%2C%20297%2C%2028020%20Madrid!5e0!3m2!1ses!2ses!4v1579807849921!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
 
                     </iframe>
                 </div>
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="box_style_1">
-                            <div class="indent_title_in">
-                                <i class="pe-7s-mail-open-file"></i>
-                                <h3>Contacto</h3>
-                            </div>
-                            <div class="wrapper_indent">
-                                <div id="message-contact"></div>
-                                <form method="post" action="assets/contact.php" id="contactform">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Nombre</label>
-                                                <input type="text" class="form-control styled" id="name_contact" name="name_contact" placeholder="Nombre">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Apellidos</label>
-                                                <input type="text" class="form-control styled" id="lastname_contact" name="lastname_contact" placeholder="Apellidos">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Email</label>
-                                                <input type="email" id="email_contact" name="email_contact" class="form-control styled" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Teléfono</label>
-                                                <input type="text" id="phone_contact" name="phone_contact" class="form-control styled" placeholder="Teléfono">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Mensaje</label>
-                                                <textarea rows="5" id="message_contact" name="message_contact" class="form-control styled" style="height:100px;" placeholder="Escriba su mensaje"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>¿Es un humano? 3 + 1 =</label>
-                                                <input type="text" id="verify_contact" class=" form-control styled" placeholder="Respuesta">
-                                            </div>
-                                            <input type="submit" value="Enviar" class="button add_bottom_30" id="submit-contact"/>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div><!-- End wrapper_indent -->
-                        </div><!-- End box style 1-->
-                    </div><!-- End col-md-9 -->
-                    
-                </div><!--End row -->
-            </div><!--End container -->
-        </div><!--End container_gray_bg -->
-
-<footer>
-    <div class="container">
-        <div class="row ">
-            <div class="col-md-3 col-sm-3">
-                <p id="logo_footer"> <img src="img/pablo-vi-logo-white.png" width="120" height="120" alt="Atena" data-retina="true"> </p>
-            </div>
-            <div class="col-md-3 col-sm-3">
-                <h4>Sobre</h4>
-                <ul>
-                    <li><a href="tour.html">Sobre Nosotros</a></li>
-                    <li><a href="actividades.html">Actividades</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="aviso-legal-y-politica-de-privacidad.html">Términos y condiciones</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-3">
-                <h4>Estudios</h4>
-                <ul>
-                    <li><a href="index.html">E.S.O</a></li>
-                    <li><a href="index.html">E.S.O para adultos presencial y a distancia</a></li>
-                    <li><a href="index.html">Bachillerato</a></li>
-                    <li><a href="index.html">Ciclos formativos</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-3">
-                <h4>Contacto</h4>
-                <ul>
-                    <li><a href="contacto.html">Contáctanos</a></li>
-                    <!--                        <li><a href="#">Plan a visit</a></li>-->
-                </ul>
-                <ul id="contacts_footer">
-                    <li>Teléfono - <a href="tel://+34914136978"> 914 136 978 | </a><a href="tel://+34915702601">915 702 601</a></li>
-                    <li>Correo - <a href="#">secretaria@pablovi.es</a></li>
-                </ul>
             </div>
         </div>
-        <!-- End row -->
+
+        <!--End row -->
+
+        <!--End container -->
     </div>
-    <!-- End container -->
-</footer><!-- End footer -->
-<div id="copy">
-    <div class="container"> © Todos los derechos reservados Colegio Pablo VI 2020. </div>
-</div><!-- End copy -->
+    <!--End container_gray_bg -->
 
-<!-- Common scripts -->
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="js/common_scripts_min.js"></script>
-<script src="js/functions.js"></script>
-<script src="assets/validate.js"></script>
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 col-sm-3">
+                    <p id="logo_footer"> <img src="img/pablo-vi-logo-white.png" width="120" height="120" alt="Atena" data-retina="true"> </p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="tour.html">Sobre Nosotros</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="aviso-legal-y-politica-de-privacidad.html">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Estudios</h4>
+                    <ul>
+                        <li><a href="index.html">E.S.O</a></li>
+                        <li><a href="index.html">E.S.O para adultos presencial y a distancia</a></li>
+                        <li><a href="index.html">Bachillerato</a></li>
+                        <li><a href="index.html">Ciclos formativos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <!--                        <li><a href="#">Plan a visit</a></li>-->
+                    </ul>
+                    <ul id="contacts_footer">
+                        <li>Teléfono - <a href="tel://+34914136978"> 914 136 978 | </a><a href="tel://+34915702601">915 702 601</a></li>
+                        <li>Correo - <a href="#">secretaria@pablovi.es</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </footer><!-- End footer -->
+    <div id="copy">
+        <div class="container"> © Todos los derechos reservados Colegio Pablo VI 2020. </div>
+    </div><!-- End copy -->
 
-</body>
-</html>
+    <!-- Common scripts -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="assets/validate.js"></script>
+
+</body></html>
