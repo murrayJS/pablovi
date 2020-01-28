@@ -1,5 +1,9 @@
 /* CUSTOM CSS HERE */
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (max-width: 991px) {
     .flex-center {
         margin-top: 5px;
@@ -40,6 +44,9 @@
     }
 }
 
+.left {
+    text-align: left;
+}
 
 .circle-container {
     position: relative;
