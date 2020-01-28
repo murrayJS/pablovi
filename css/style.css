@@ -413,6 +413,10 @@ header {
     transition: all 0.4s ease;
 }
 
+header:not(.sticky){
+    padding-top: 15px;
+}
+
 header.sticky,
 header.sticky#contacts {
     background-color: #366284;
@@ -432,7 +436,6 @@ header#contacts {
 #logo {
     display: block;
     float: left;
-    margin: 15px 0 0 10px;
 }
 
 .sticky #logo {
@@ -441,8 +444,30 @@ header#contacts {
 
 #logo img {
     display: block;
-    height: 120px;
-    width: 120px;
+    height: 90px;
+    width: 90px;
+}
+
+@media only screen and (max-width : 767px) {
+    #logo img {
+        display: block;
+        height: 60px;
+        width: 60px; 
+    }   
+}
+
+@media (min-width: 768px) {
+    #logo img {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #logo img {
+        height: 100px;
+        width: 100px;
+    }
 }
 
 .sticky #logo img {
@@ -450,6 +475,19 @@ header#contacts {
     width: 60px;
 }
 
+@media (min-width: 768px) {
+    .sticky #logo img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sticky #logo img {
+        height: 60px;
+        width: 60px;
+    }
+}
 
 /* Header bg */
 
