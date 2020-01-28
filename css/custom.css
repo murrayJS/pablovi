@@ -1,8 +1,17 @@
 /* CUSTOM CSS HERE */
 
-.flex-center {
-    display: flex;
-    align-items: center;
+@media (max-width: 991px) {
+    .flex-center {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-center {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
 }
 
 .margin-b-50 {
@@ -16,6 +25,21 @@
 .padding-right-0 {
     padding-right: 0;
 }
+
+.white-bg {
+    background: white;
+}
+
+.padding-25 {
+    padding: 25px;
+}
+
+@media (min-width: 768px) {
+    .address-info {
+        display: flex;
+    }
+}
+
 
 .circle-container {
     position: relative;
