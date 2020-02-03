@@ -7,9 +7,9 @@ $(window).load(function () { // makes sure the whole site is loaded
         $('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website.
         $('#intro_txt').addClass('animated fadeInDown');
     })
-    /* ==============================================
-    	Animation on scroll
-    =============================================== */
+/* ==============================================
+    Animation on scroll
+=============================================== */
 new WOW().init();
 /* ==============================================
 	Sticky nav
@@ -68,6 +68,36 @@ $(function () {
         $('#modal2 > form > input[type="modal2"]').focus();
     });
     $('#modal2, #modal2 button.close').on('click keyup', function (event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+            $('body').removeClass('noScroll');
+        }
+    });
+});
+$(function () {
+    'use strict';
+    $('a[href="#modal3"]').on('click', function (event) {
+        event.preventDefault();
+        $('#modal3').addClass('open');
+        $('body').addClass('noScroll');
+        $('#modal3 > form > input[type="modal3"]').focus();
+    });
+    $('#modal3, #modal3 button.close').on('click keyup', function (event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+            $('body').removeClass('noScroll');
+        }
+    });
+});
+$(function () {
+    'use strict';
+    $('a[href="#modal4"]').on('click', function (event) {
+        event.preventDefault();
+        $('#modal4').addClass('open');
+        $('body').addClass('noScroll');
+        $('#modal4 > form > input[type="modal4"]').focus();
+    });
+    $('#modal4, #modal4 button.close').on('click keyup', function (event) {
         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
             $(this).removeClass('open');
             $('body').removeClass('noScroll');
