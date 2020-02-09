@@ -325,6 +325,7 @@ a.button_outline.large,
 }
 
 a.button_download {
+    color: #fff;
     padding: 15px 10px 15px 50px;
     display: inline-block;
     white-space: nowrap;
@@ -333,14 +334,15 @@ a.button_download {
     position: relative;
     min-width: 220px;
     margin-bottom: 20px;
-    border: 2px solid #00aeef;
+    border: 2px solid #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    transition: background-color 0.5s ease;
 }
 
 a.button_download:hover {
-    background-color: #00aeef;
+    background-color: #189dd4;
     color: #fff;
 }
 
@@ -413,7 +415,7 @@ header {
     transition: all 0.4s ease;
 }
 
-header:not(.sticky){
+header:not(.sticky) {
     padding-top: 15px;
 }
 
@@ -448,12 +450,12 @@ header#contacts {
     width: 90px;
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width: 767px) {
     #logo img {
         display: block;
         height: 60px;
-        width: 60px; 
-    }   
+        width: 60px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -488,6 +490,7 @@ header#contacts {
         width: 60px;
     }
 }
+
 
 /* Header bg */
 
@@ -1507,7 +1510,7 @@ ul.list_4 li:before {
     margin: -3px;
     min-height: 100%;
     width: 25%;
-    background-color: #000;
+    background-color: transparent;
     list-style: none;
 }
 
@@ -2716,6 +2719,8 @@ ul.list_3 li:before {
     font-family: "proxima_novasemibold", Arial, Helvetica, sans-serif;
     color: #fff;
 }
+
+.banner div ul {}
 
 a.banner_bt {
     display: inline-block;
