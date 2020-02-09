@@ -15,7 +15,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .tabs nav ul li {
