@@ -173,27 +173,27 @@ Main Components
 }
 
 .tour-section:nth-of-type(2) .half-container:first-of-type {
-    background-image: url("../img/photos/114-1000x1000.jpg");
+    background-image: url("../assets/images/tour/somos.jpg");
     background-size: cover;
 }
 
 .tour-section:nth-of-type(3) .half-container:first-of-type {
-    background-image: url("../img/photos/15994-a-female-student-reading-a-book-or.jpg");
+    background-image: url("../assets/images/tour/compromiso.jpg");
     background-size: cover;
 }
 
 .tour-section:nth-of-type(4) .half-container:first-of-type {
-    background-image: url("../img/photos/15078596384_72c25fb130_o.jpg");
+    background-image: url("../assets/images/tour/comunicacion.jpg");
     background-size: cover;
 }
 
 .tour-section:nth-of-type(5) .half-container:first-of-type {
-    background-image: url("../img/photos/AdobeStock_80036885-1000x1000.jpeg");
+    background-image: url("../assets/images/tour/instalaciones.jpeg");
     background-size: cover;
 }
 
 .tour-section:nth-of-type(6) .half-container:first-of-type {
-    background-image: url("../img/photos/blur-child-classroom-256468-1000x1000.jpg");
+    background-image: url("../assets/images/tour/actividades.jpg");
     background-size: cover;
 }
 
