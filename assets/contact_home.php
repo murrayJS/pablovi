@@ -15,22 +15,22 @@ $phone_contact_home   = $_POST['phone_contact_home'];
 $course_home= $_POST['course_home'];
 
 if(trim($name_contact_home) == '') {
-	echo '<div class="error_message" style="color:#ffd200">You must enter your Name.</div>';
+	echo '<div class="error_message" style="color:#ffd200">Debes ingresar tu nombre.</div>';
 	exit();
 } else if(trim($email_contact_home) == '') {
-	echo '<div class="error_message" style="color:#ffd200">Please enter a valid email address.</div>';
+	echo '<div class="error_message" style="color:#ffd200">Por favor, introduce una dirección de correo electrónico válida.</div>';
 	exit();
 } else if(!isEmail($email_contact_home)) {
-	echo '<div class="error_message" style="color:#ffd200">You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="error_message" style="color:#ffd200">Ingresó una dirección de correo electrónico no válida, intente nuevamente.</div>';
 	exit();
 	} else if(trim($phone_contact_home) == '') {
-	echo '<div class="error_message" style="color:#ffd200">Please enter a valid phone number.</div>';
+	echo '<div class="error_message" style="color:#ffd200">Por favor ingrese un número de teléfono válido.</div>';
 	exit();
 } else if(!is_numeric($phone_contact_home)) {
-	echo '<div class="error_message" style="color:#ffd200">Phone number can only contain numbers.</div>';
+	echo '<div class="error_message" style="color:#ffd200">El número de teléfono solo puede contener números.</div>';
 	exit();
 } else if(trim($course_home) == '') {
-	echo '<div class="error_message" style="color:#ffd200">Please select a course.</div>';
+	echo '<div class="error_message" style="color:#ffd200">Por favor seleccione un curso.</div>';
 	exit();
 } 
 
@@ -40,16 +40,16 @@ if(get_magic_quotes_gpc()) {
 
 
 //$address = "HERE your email address";
-$address = "your@email.com";
+$address = "secretaria@pablovi.es";
 
 
 // Below the subject of the email
-$e_subject = 'You\'ve been contacted by ' . $name_contact_home . '.';
+$e_subject = 'Has sido contactado por ' . $name_contact_home . '.';
 
 // You can change this if you feel that you need to.
-$e_body = "You have been contacted by $name_contact_home with attention to this course:" . PHP_EOL . PHP_EOL;
+$e_body = "Usted ha sido contactado por $name_contact_home con atención a este curso:" . PHP_EOL . PHP_EOL;
 $e_content = "\"$course_home\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name_contact_home via email $email_contact_home or via phone $phone_contact_home";
+$e_reply = "Puedes contactar $name_contact_home vía correo $email_contact_home o vía telefónica $phone_contact_home";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -60,18 +60,19 @@ $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_contact_home";
-$usersubject = "Thank You";
+$usersubject = "Gracias";
 $userheaders = "From: secretaria@pablovi.es\n";
-$usermessage = "Thank you for contact ATENA. We will reply shortly with more details on the course: $course_home";
+$usermessage = "Gracias por contactar con el Colegio Pablo VI. Le contestaremos en la mayor brevedad
+ con más detalla sobre el curso: $course_home";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Success message
-	echo "<div id='success_page' style='padding:20px'>";
-	echo "<strong >Email Sent.</strong>";
-	echo "Thank you <strong>$name_contact_home</strong>,<br> your message has been submitted. We will contact you shortly.";
-	echo "</div>";
+    echo "<div id='success_page' style='padding:20px'>";
+    echo "<strong >Mensaje enviado.</strong>";
+    echo "Gracias <strong>$name_contact</strong>,<br> tu mensaje ha sido enviado correctamente. Le contestaremos en la mayor brevedad.";
+    echo "</div>";
 
 } else {
 
