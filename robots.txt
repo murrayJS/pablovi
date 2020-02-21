@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Disallow: 
+#sitemaps
+Sitemap: https://www.pablovi.es/sitemap.xml

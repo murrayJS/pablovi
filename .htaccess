@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.pablovi.es [NC]
+RewriteRule (.*) https://pablovi.es/$1 [R=301,L,QSA]
+</IfModule>
