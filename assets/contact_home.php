@@ -32,10 +32,6 @@ if(trim($name_contact_home) == '') {
 } else if(trim($course_home) == '') {
 	echo '<div class="error_message" style="color:#ffd200">Por favor seleccione un curso.</div>';
 	exit();
-} 
-
-if(get_magic_quotes_gpc()) {
-	$message_contact_home = stripslashes($message_contact_home);
 }
 
 
@@ -49,7 +45,7 @@ $e_subject = 'Has sido contactado por ' . $name_contact_home . '.';
 // You can change this if you feel that you need to.
 $e_body = "Usted ha sido contactado por $name_contact_home con atención a este curso:" . PHP_EOL . PHP_EOL;
 $e_content = "\"$course_home\"" . PHP_EOL . PHP_EOL;
-$e_reply = "Puedes contactar $name_contact_home vía correo $email_contact_home o vía telefónica $phone_contact_home";
+$e_reply = "Puedes contactar con $name_contact_home vía correo: $email_contact_home o vía telefónica: $phone_contact_home";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
