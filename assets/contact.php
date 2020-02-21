@@ -15,6 +15,7 @@ $email_contact    = $_POST['email_contact'];
 $phone_contact   = $_POST['phone_contact'];
 $message_contact = $_POST['message_contact'];
 $verify_contact   = $_POST['verify_contact'];
+$course   = $_POST['course_contact'];
 
 if(trim($name_contact) == '') {
 	echo '<div class="error_message">Debes ingresar tu nombre.</div>';
@@ -49,18 +50,17 @@ if(get_magic_quotes_gpc()) {
 	$message_contact = stripslashes($message_contact);
 }
 
-
 //$address = "HERE your email address";
 $address = "secretaria@pablovi.es";
 
 
 // Below the subject of the email
-$e_subject = 'Has sido contactado por ' . $name_contact_home . '.';
+$e_subject = 'Has sido contactado por ' . $name_contact . '.';
 
 // You can change this if you feel that you need to.
-$e_body = "Usted ha sido contactado por $name_contact_home con atención a este curso:" . PHP_EOL . PHP_EOL;
-$e_content = "\"$course_home\"" . PHP_EOL . PHP_EOL;
-$e_reply = "Puedes contactar $name_contact_home vía correo $email_contact_home o vía telefónica $phone_contact_home";
+$e_body = "Usted ha sido contactado por $name_contact con atención a este curso: $course" . PHP_EOL . PHP_EOL;
+$e_content = $message_contact . PHP_EOL . PHP_EOL;
+$e_reply = "Puedes contactar con $name_contact vía correo: $email_contact o vía telefónica: $phone_contact";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -73,7 +73,8 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 $user = "$email_contact";
 $usersubject = "Gracias";
 $userheaders = "From: secretaria@pablovi.es\n";
-$usermessage = "Thank you for contact ATENA. We will reply shortly!";
+$usermessage =  "Gracias por contactar con el Colegio Pablo VI. Le contestaremos en la mayor brevedad
+ con más detalla sobre el curso: $course";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
