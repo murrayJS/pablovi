@@ -59,7 +59,7 @@ $user = "$email_contact_home";
 $usersubject = "Gracias";
 $userheaders = "From: secretaria@pablovi.es\n";
 $usermessage = "Gracias por contactar con el Colegio Pablo VI. Le contestaremos en la mayor brevedad
- con más detalla sobre el curso: $course_home";
+ con mas detalle sobre el curso: $course_home";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
