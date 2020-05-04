@@ -520,19 +520,47 @@ header#contacts {
 }
 
 .sub_header.bg_1 {
-    background-image: url(../img/photos/art-creative-exhibition-20967-1000x1000.jpg);
+    background-image: url(../img/photos/actividades.jpg);
 }
 
 .sub_header.bg_2 {
-    background-image: url(../img/photos/16257-inside-of-a-cdc-library-or.jpg);
+    background-image: url(../img/photos/servicios.jpg);
 }
 
 .sub_header.bg_3 {
-    background-image: url(../img/photos/blur-child-classroom-256468-1000x1000.jpg);
+    background-image: url(../img/photos/contacto.jpg);
 }
 
 .sub_header.bg_4 {
-    background-image: url(../img/header_bg_4.jpg);
+    background-image: url(../img/photos/legal.jpg);
+}
+
+.sub_header.bg_5 {
+    background-image: url(../img/photos/eso.jpg);
+}
+
+.sub_header.bg_6 {
+    background-image: url(../img/photos/eso-adulto.jpg);
+}
+
+.sub_header.bg_7 {
+    background-image: url(../img/photos/bachillerato.jpg);
+}
+
+.sub_header.bg_8 {
+    background-image: url(../img/photos/ciclos.jpg);
+}
+
+.sub_header.bg_9 {
+    background-image: url(../img/photos/af.jpg);
+}
+
+.sub_header.bg_10 {
+    background-image: url(../img/photos/asir.jpg);
+}
+
+.sub_header.bg_11 {
+    background-image: url(../img/photos/ei.jpg);
 }
 
 .sub_header_contact_home {
