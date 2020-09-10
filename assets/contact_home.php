@@ -12,6 +12,7 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name_contact_home     = $_POST['name_contact_home'];
 $email_contact_home    = $_POST['email_contact_home'];
 $phone_contact_home   = $_POST['phone_contact_home'];
+$verify_privacity   = $_POST['verify_privacity'];
 $course_home= $_POST['course_home'];
 
 if(trim($name_contact_home) == '') {
@@ -32,6 +33,9 @@ if(trim($name_contact_home) == '') {
 } else if(trim($course_home) == '') {
 	echo '<div class="error_message" style="color:#ffd200">Por favor seleccione un curso.</div>';
 	exit();
+}   else if(!isset($verify_privacity) || $verify_privacity === 'accept_1') {
+    echo '<div class="error_message">Por favor acepte las condiciones de uso.</div>';
+    exit();
 }
 
 
