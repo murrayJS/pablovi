@@ -15,6 +15,7 @@ $email_contact    = $_POST['email_contact'];
 $phone_contact   = $_POST['phone_contact'];
 $message_contact = $_POST['message_contact'];
 $verify_contact   = $_POST['verify_contact'];
+$verify_privacity   = $_POST['verify_privacity'];
 $course   = $_POST['course_contact'];
 
 if(trim($name_contact) == '') {
@@ -44,6 +45,9 @@ if(trim($name_contact) == '') {
 } else if(trim($verify_contact) != '4') {
 	echo '<div class="error_message">El número de verificación que ingresó es incorrecto.</div>';
 	exit();
+}  else if(!isset($verify_privacity) || $verify_privacity === 'accept_1') {
+    echo '<div class="error_message">Por favor acepte las condiciones de uso.</div>';
+    exit();
 }
 
 if(get_magic_quotes_gpc()) {
