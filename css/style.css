@@ -1,10 +1,10 @@
 /*
-Theme Name: ATENA 
+Theme Name: ATENA
 Theme URI: http://www.ansonika.com/atena/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 1. SITE STRUCTURE and TYPOGRAPHY
 - 1.1 Typography
@@ -26,8 +26,8 @@ Author URI: http://themeforest.net/user/Ansonika/
 3.4 Login/Register modals
 3.5 Spacing
 3.6  Newsletter footer
-3.7 Pagination 
-3.8 Search modal 
+3.7 Pagination
+3.8 Search modal
 3.9 List styles
 3.10 Misc
 3.11 Tooltips
@@ -569,7 +569,7 @@ header#contacts {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 570px;
+    height: 690px;
     font-size: 20px;
     display: block;
     color: #fff;
