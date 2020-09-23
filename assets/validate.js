@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
 
 		$("#message-newsletter").slideUp(750,function() {
 		$('#message-newsletter').hide();
-		
+
 		$('#submit-newsletter')
 			.after('<i class="icon-spin4 animate-spin loader"></i>')
 			.attr('disabled','disabled');
@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
  		$('#submit-contact-home')
 			.after('<i class="icon-spin4 animate-spin loader"></i>')
 			.attr('disabled','disabled');
-			
+
 		$.post(action, {
 			name_contact_home: $('#name_contact_home').val(),
 			email_contact_home: $('#email_contact_home').val(),
@@ -82,7 +82,7 @@ jQuery(document).ready(function(){
  		$('#submit-contact')
 			.after('<i class="icon-spin4 animate-spin loader"></i>')
 			.attr('disabled','disabled');
-			
+
 		$.post(action, {
 			name_contact: $('#name_contact').val(),
 			lastname_contact: $('#lastname_contact').val(),
@@ -90,7 +90,8 @@ jQuery(document).ready(function(){
 			phone_contact: $('#phone_contact').val(),
 			message_contact: $('#message_contact').val(),
 			verify_contact: $('#verify_contact').val(),
-			course_contact: $('#course_contact').val()
+			course_contact: $('#course_contact').val(),
+			verify_privacity: $('#verify_privacity').prop('checked')
 		},
 			function(data){
 				document.getElementById('message-contact').innerHTML = data;
@@ -108,7 +109,7 @@ jQuery(document).ready(function(){
 
 	});
 		});
-		
+
 // Jquery validate form visit
 jQuery(document).ready(function(){
 
@@ -122,7 +123,7 @@ jQuery(document).ready(function(){
  		$('#submit-visit')
 			.after('<i class="icon-spin4 animate-spin loader"></i>')
 			.attr('disabled','disabled');
-			
+
 		$.post(action, {
 			name_visit: $('#name_visit').val(),
 			lastname_visit: $('#lastname_visit').val(),
