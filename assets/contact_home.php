@@ -33,7 +33,7 @@ if(trim($name_contact_home) == '') {
 } else if(trim($course_home) == '') {
 	echo '<div class="error_message" style="color:#ffd200">Por favor seleccione un curso.</div>';
 	exit();
-}   else if(!isset($verify_privacity) || $verify_privacity === 'accept_1') {
+}   else if($verify_privacity === 'false') {
     echo '<div class="error_message">Por favor acepte las condiciones de uso.</div>';
     exit();
 }
