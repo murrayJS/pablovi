@@ -60,9 +60,21 @@
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.min.css" rel="stylesheet">
     <!-- SPECIFIC CSS -->
-    <link href="css/skins/square/blue.min.css" rel="stylesheet"> </head>
+    <link href="css/skins/square/blue.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cookie-banner.css">
+    <script async src="js/cookie-banner.js"></script>
+</head>
 
 <body>
+<!-- Cookie Banner -->
+<div class="nk-cookie-banner alert alert-warning text-center mb-0" role="alert">
+    Al seguir navegando se almacenan <a href="politica-de-cookie.html" target="blank">cookies</a> que permiten que tu experiencia de navegación sea más fluida.
+    <!-- <input type="checkbox"><label style="margin: 0 5px;">Cookies externas</label> -->
+    <button type="button" class="btn btn-primary btn-sm ml-3" onclick="window.nk_hideCookieBanner()">
+        Estoy de acuerdo
+    </button>
+</div>
+<!-- End of Cookie Banner -->
     <div id="preloader">
         <div class="pulse"></div>
     </div>
@@ -316,13 +328,6 @@
     <script src="js/functions.min.js"></script>
     <script src="assets/validate.min.js"></script>
     <!-- Specific scripts -->
-    <script src="js/icheck.min.js"></script>
-    <script>
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_square-blue'
-            , radioClass: 'iradio_square-blue'
-        });
-    </script>
     <script src="js/jquery.validate.min.js"></script>
     <script>
         $("#apply_online").validate();
