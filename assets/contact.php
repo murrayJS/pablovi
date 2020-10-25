@@ -62,7 +62,7 @@ $address = "secretaria@pablovi.es";
 $e_subject = 'Has sido contactado por ' . $name_contact . '.';
 
 // You can change this if you feel that you need to.
-$e_body = "Usted ha sido contactado por $name_contact con atención a este curso: $course" . PHP_EOL . PHP_EOL;
+$e_body = "Usted ha sido contactado por $name_contact con atención a este curso: ". PHP_EOL . PHP_EOL.  "\"$course\"" . PHP_EOL . PHP_EOL;
 $e_content = $message_contact . PHP_EOL . PHP_EOL;
 $e_reply = "Puedes contactar con $name_contact vía correo: $email_contact o vía telefónica: $phone_contact";
 
@@ -75,11 +75,11 @@ $headers .= 'MIME-Version: 1.0' . PHP_EOL;
 $headers .= 'Content-type: text/plain; charset=utf-8' . PHP_EOL;
 $headers .= 'Content-Transfer-Encoding: quoted-printable' . PHP_EOL;
 
-$user = "$email_contact";
+$user = (string)$email_contact;
 $usersubject = "Gracias";
 $userheaders = "From: secretaria@pablovi.es\n";
 $usermessage =  "Gracias por contactar con el Colegio Pablo VI. Le contestaremos en la mayor brevedad
- con mas detalle sobre el curso: $course";
+ con más detalle sobre el curso: $course";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
