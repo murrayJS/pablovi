@@ -12,6 +12,7 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name_contact_home     = $_POST['name_contact_home'];
 $email_contact_home    = $_POST['email_contact_home'];
 $phone_contact_home   = $_POST['phone_contact_home'];
+$verify_contact_home   = $_POST['verify_contact_home'];
 $verify_privacity   = $_POST['verify_privacity'];
 $course_home= $_POST['course_home'];
 
@@ -33,7 +34,13 @@ if(trim($name_contact_home) == '') {
 } else if(trim($course_home) == '') {
 	echo '<div class="error_message" style="color:#ffd200">Por favor seleccione un curso.</div>';
 	exit();
-}   else if($verify_privacity === 'false') {
+} else if(!isset($verify_contact_home) || trim($verify_contact_home) == '') {
+    echo '<div class="error_message">Por favor ingrese el número de verificación.</div>';
+    exit();
+} else if(trim($verify_contact_home) != '4') {
+    echo '<div class="error_message">El número de verificación que ingresó es incorrecto.</div>';
+    exit();
+} else if($verify_privacity === 'false') {
     echo '<div class="error_message">Por favor acepte las condiciones de uso.</div>';
     exit();
 }
@@ -60,11 +67,11 @@ $headers .= 'MIME-Version: 1.0' . PHP_EOL;
 $headers .= 'Content-type: text/plain; charset=utf-8' . PHP_EOL;
 $headers .= 'Content-Transfer-Encoding: quoted-printable' . PHP_EOL;
 
-$user = "$email_contact_home";
+$user = (string)$email_contact_home;
 $usersubject = "Gracias";
 $userheaders = "From: secretaria@pablovi.es\n";
 $usermessage = "Gracias por contactar con el Colegio Pablo VI. Le contestaremos en la mayor brevedad
- con mas detalle sobre el curso: $course_home";
+ con más detalle sobre el curso: $course_home";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
@@ -72,7 +79,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	// Success message
     echo "<div id='success_page' style='padding:20px'>";
     echo "<strong >Mensaje enviado.</strong>";
-    echo "Gracias <strong>$name_contact</strong>,<br> tu mensaje ha sido enviado correctamente. Le contestaremos en la mayor brevedad.";
+    echo "Gracias <strong>$name_contact_home</strong>,<br> tu mensaje ha sido enviado correctamente. Le contestaremos en la mayor brevedad.";
     echo "</div>";
 
 } else {
