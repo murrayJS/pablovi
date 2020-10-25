@@ -51,6 +51,7 @@ jQuery(document).ready(function(){
 						name_contact_home: $('#name_contact_home').val(),
 						email_contact_home: $('#email_contact_home').val(),
 						phone_contact_home: $('#phone_contact_home').val(),
+						verify_contact_home: $('#verify_contact_home').val(),
 						course_home: $('#course_home').val(),
 						verify_privacity: $('#verify_privacity').prop('checked')
 					},
